@@ -1,0 +1,179 @@
+.dark {
+    --background: var(--slate-950);
+    --border: var(--slate-800);
+
+    --h1-size: 48px;
+    --h1-weight: 600;
+    --h1-color: var(--slate-50);
+
+    --h2-size: 30px;
+    --h2-weight: 600;
+    --h2-color: var(--slate-100);
+
+    --h3-size: 24px;
+    --h3-weight: 500;
+    --h3-color: var(--slate-200);
+
+    --h4-size: 20px;
+    --h4-weight: 500;
+    --h4-color: var(--slate-200);
+
+    --p-size: 16px;
+    --p-weight: 500;
+    --p-color: var(--slate-300);
+
+    --sub-size: 12px;
+    --sub-weight: 500;
+    --sub-color: var(--slate-400);
+
+    --btn-primary: var(--slate-950);
+    --btn-secondary: var(--slate-200);
+    --btn-outline: var(--slate-200);
+}
+
+.dark .icon {
+    fill: var(--slate-800);
+}
+
+.dark body {
+    margin: 0;
+    background-color: var(--background);
+}
+
+.dark h1 {
+    font-size: var(--h1-size);
+    font-weight: var(--h1-weight);
+    color: var(--h1-color);
+}
+
+.dark h2 {
+    font-size: var(--h2-size);
+    font-weight: var(--h2-weight);
+    color: var(--h2-color);
+}
+
+.dark h3 {
+    font-size: var(--h3-size);
+    font-weight: var(--h3-weight);
+    color: var(--h3-color);
+}
+
+.dark h4 {
+    font-size: var(--h4-size);
+    font-weight: var(--h4-weight);
+    color: var(--h4-color);
+}
+
+.dark p {
+    font-size: var(--p-size);
+    font-weight: var(--p-weight);
+    color: var(--p-color);
+}
+
+.dark .sub {
+    font-size: var(--sub-size);
+    font-weight: var(--sub-weight);
+    color: var(--sub-color);
+}
+
+.dark button {
+    font-family: var(--font);
+    font-size: var(--btn-size);
+    border-radius: var(--radius);
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    transition: all 0s ease-in-out;
+}
+
+.dark button:hover {
+    transition: all 0.1s ease-in-out;
+}
+
+.dark button.primary {
+    color: var(--btn-primary);
+    background-color: var(--primary);
+}
+
+.dark button.primary:hover {
+    background-color: var(--primary-light);
+}
+
+.dark button.secondary {
+    color: var(--btn-secondary);
+    background-color: var(--slate-800);
+}
+
+.dark button.secondary:hover {
+    background-color: var(--slate-700);
+}
+
+.dark button.outline {
+    color: var(--btn-outline);
+    background-color: var(--background);
+    border: 1px solid var(--border);
+}
+
+.dark button.outline:hover {
+    background-color: var(--slate-900);
+}
+
+.dark button.icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 8px;
+    width: 46px;
+    height: 46px;
+    color: var(--btn-outline);
+    background-color: var(--background);
+    border-radius: 100%;
+}
+
+.dark button.icon:hover {
+    background-color: var(--slate-900);
+}
+
+.dark button.icon:active {
+    background-color: var(--slate-800);
+}
+
+.dark input {
+    font-family: var(--font);
+    color: var(--btn-outline);
+    background-color: var(--background);
+    border-radius: var(--radius);
+    border: 1px solid var(--border);
+    padding: 0.5rem 0.75rem;
+    outline: none;
+}
+
+.dark input:focus {
+    box-sizing: content-box;
+    outline: 2px solid var(--primary);
+    outline-offset: 1px;
+}
+
+.dark hr {
+    border: 1px solid var(--border);
+}
+
+.dark select {
+    appearance: none;
+    background-color: var(--background);
+    border: 1px solid var(--border);
+    color: var(--btn-outline);
+    padding: 0.5rem 1rem;
+    border-radius: var(--radius);
+    cursor: pointer;
+    position: relative;
+}
+
+/* Styling for the options inside the select */
+.dark select option {
+    color: #fff;
+    cursor: pointer;
+    background: var(--background);
+    color: var(--slate-50);
+}

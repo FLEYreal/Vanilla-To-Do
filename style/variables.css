@@ -1,0 +1,79 @@
+@import url('./theme/dark.css');
+@import url('./theme/light.css');
+
+:root {
+
+    --font: ui-sans-serif, system-ui, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+    --transition: all 0.5s ease-in-out;
+
+    --primary: #22d3ee;
+    --primary-light: #67e8f9;
+    --primary-dark: #0891b2;
+
+    --danger: #dc2626;
+    --danger-light: #ef4444;
+    --danger-dark: #b91c1c;
+
+    --success-lightest: #d9f99d;
+    --success: #84cc16;
+    --success-light: #a3e635;
+    --success-dark: #65a30d;
+    --success-darkest: #1a2e05;
+
+    --slate-50: #f8fafc;
+    --slate-100: #f1f5f9;
+    --slate-200: #e2e8f0;
+    --slate-300: #cbd5e1;
+    --slate-400: #94a3b8;
+    --slate-500: #64748b;
+    --slate-600: #475569;
+    --slate-700: #334155;
+    --slate-800: #1e293b;
+    --slate-900: #0f172a;
+    --slate-950: #020617;
+
+    --radius: 0.375rem;;
+
+    --btn-size: 16px;
+    --btn-weight: 500;
+
+    --background: var(--slate-100);
+    --border: var(--slate-400);
+
+    --h1-size: 48px;
+    --h1-weight: 600;
+    --h1-color: var(--slate-950);
+
+    --h2-size: 30px;
+    --h2-weight: 600;
+    --h2-color: var(--slate-900);
+
+    --h3-size: 24px;
+    --h3-weight: 500;
+    --h3-color: var(--slate-800);
+
+    --h4-size: 20px;
+    --h4-weight: 500;
+    --h4-color: var(--slate-800);
+
+    --p-size: 16px;
+    --p-weight: 500;
+    --p-color: var(--slate-700);
+
+    --sub-size: 12px;
+    --sub-weight: 500;
+    --sub-color: var(--slate-600);
+
+    --btn-primary: var(--slate-950);
+    --btn-secondary: var(--slate-700);
+    --btn-outline: var(--slate-700);
+
+    margin: 0;
+    padding: 0;
+    color: var(--slate-50);
+    transition: var(--transition);
+    font-family: var(--font);
+    font-weight: 500;
+    font-size: 16px;
+
+}

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To-Do List</title>
+
+    <link rel="stylesheet" href="./style/global.css" />
+
+</head>
+
+<body>
+
+    <script src="./scripts/theme.js"></script>
+
+    <main>
+
+        <header class="header">
+
+            <!-- Заголовок страницы -->
+            <h4>♥️ To-Do</h4>
+
+            <!-- Правая панель -->
+            <div class="header-action">
+                <button class="secondary new-list">+ Список</button>
+                <button class="primary theme-switch">Тема</button>
+            </div>
+
+        </header>
+
+        <!-- Разделитель хедера и тела -->
+        <hr style="margin-bottom: 20px;" />
+
+        <!-- Контентная часть -->
+        <section>
+
+            <!-- Фильтры & Настройки -->
+            <section class="filters">
+
+                <select id="items-filter">
+                    <option selected="selected">Все Задачи</option>
+                    <option>Только Активные</option>
+                    <option>Только Выполненные</option>
+                </select>
+
+            </section>
+
+            <!-- Список to-do -->
+            <section id="lists-container">
+
+            </section>
+
+        </section>
+
+    </main>
+
+    <!-- Модальное окно -->
+    <div id="modal-container">
+
+        <!-- Контент Модального окна -->
+        <div id="modal-content">
+
+        </div>
+
+    </div>
+
+    <script src="./scripts/ui/modal.js"></script>
+    <script src="./scripts/ui/item.js"></script>
+    <script src="./scripts/ui/list.js"></script>
+    <script src="./scripts/render.js"></script>
+
+</body>
+
+</html>
