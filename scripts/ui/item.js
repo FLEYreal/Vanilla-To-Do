@@ -20,10 +20,7 @@ function createItemContainer({ checked, itemId, id, title, description }) {
     newItemContainer.classList.add('item');
 
     // Listener, при нажатии на to-do он будет менять состояние выполнености на противоположное
-    newItemContainer.addEventListener('click', (event) => {
-
-        // Если клик не по контейнеру, то не делать ничего
-        if (event.target !== newItemContainer) return;
+    newItemContainer.addEventListener('click', () => {
 
         // Переключить стили контейнера
         newItemContainer.classList.toggle('checked-item');
@@ -66,7 +63,7 @@ function createItemContainer({ checked, itemId, id, title, description }) {
 
     // Создание кнопки удаления
     const deleteButton = document.createElement('button');
-    deleteButton.classList.add('icon'); // Тип кнопки : Иконка
+    deleteButton.classList.add('icon', 'delete-item-btn'); // Тип кнопки : Иконка
     deleteButton.style.border = '2px solid var(--danger)' // Добавить красную обводку
     deleteButton.innerHTML = `
         <svg xmlns="http://www.w3.org/2000/svg" height="24" viewBox="0 -960 960 960" width="24" height="24">

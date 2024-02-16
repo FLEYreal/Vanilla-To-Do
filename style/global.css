@@ -62,7 +62,7 @@ main {
 }
 
 .item {
-    transition: all 0.12s ease-in-out;
+    transition: all 0.07s ease-in-out;
     cursor: pointer;
     padding: 12px 16px;
     display: flex;
